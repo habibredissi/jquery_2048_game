@@ -1,0 +1,136 @@
+.tile {
+    width: 150px !important;
+    height: 150px !important;
+    background: #CDC1B4;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+}
+
+.game-container {
+    max-width: 680px;
+    background: white;
+}
+
+.scoreBoard {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.scoreUp {
+    position: absolute;
+    top: 30px;
+    right: +70px;
+}
+
+.newGame button {
+    background: #8f7a66;
+    border: 0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color:#2c3e50;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 6em;
+    text-transform: uppercase;
+    text-shadow: #fff 2px 0 10px;
+    font-weight: bold;
+}
+
+.gameTitle {
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+@-webkit-keyframes appear {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0); }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); } }
+  @-moz-keyframes appear {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0); }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); } }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0); }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); } }
+  
+  .tile-new {
+    -webkit-animation: appear 200ms ease 100ms;
+    -moz-animation: appear 200ms ease 100ms;
+    animation: appear 200ms ease 100ms;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode: backwards; 
+  }
+
+  .panelScore {
+    background: #BBADA0;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px;
+    border-radius: 10px;
+    border: 5px solid white;
+  }

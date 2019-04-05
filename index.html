@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2048</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+
+<body>
+
+    <div class="container game-container">
+        <div class="row scoreBoard">
+            <div class="col-xs-6 text-center gameTitle">2048</div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-6 text-center panelScore">
+                        <p>Score</p>
+                        <p class="score">0</p>
+                        <p class="scoreUp"></p>
+                    </div>
+                    <div class="col-xs-6 text-center panelScore">
+                        <p>Best</p>
+                        <p class="bestScore">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 newGame text-center"><button>New game</button></div>
+        </div>
+        <div class="row tileRow">
+            <div class="col-xs-3 tile text-center" id="00"></div>
+            <div class="col-xs-3 tile text-center" id="01"></div>
+            <div class="col-xs-3 tile text-center" id="02"></div>
+            <div class="col-xs-3 tile text-center" id="03"></div>
+        </div>
+        <div class="row tileRow">
+            <div class="col-xs-3 tile text-center" id="10"></div>
+            <div class="col-xs-3 tile text-center" id="11"></div>
+            <div class="col-xs-3 tile text-center" id="12"></div>
+            <div class="col-xs-3 tile text-center" id="13"></div>
+        </div>
+        <div class="row tileRow">
+            <div class="col-xs-3 tile text-center" id="20"></div>
+            <div class="col-xs-3 tile text-center" id="21"></div>
+            <div class="col-xs-3 tile text-center" id="22"></div>
+            <div class="col-xs-3 tile text-center" id="23"></div>
+        </div>
+        <div class="row tileRow">
+            <div class="col-xs-3 tile text-center" id="30"></div>
+            <div class="col-xs-3 tile text-center" id="31"></div>
+            <div class="col-xs-3 tile text-center" id="32"></div>
+            <div class="col-xs-3 tile text-center" id="33"></div>
+        </div>
+    </div>
+    <div id="overlay">
+            <div id="text">Game Over !</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="2048.js"></script>
+    <script>
+    $( document ).ready(function() {
+        $(this).game2048();
+    });
+    </script>
+    
+</body>
+
+</html>
